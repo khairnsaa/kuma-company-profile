@@ -1,0 +1,110 @@
+@media screen and (max-width: 1125px) {
+  .title h1 {
+    font-size: 3.2em;
+    margin-right: 1em;
+  }
+  .hero img {
+    bottom: -20%;
+    left: -28%;
+    width: 75%;
+  }
+
+  .benefit {
+    margin-top: 8em;
+  }
+
+  .benefit-box {
+    flex-wrap: wrap;
+  }
+
+  footer {
+    padding: 0 2em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero img {
+    bottom: 5%;
+    left: -28%;
+    width: 85%;
+  }
+
+  .title h1 {
+    font-size: 2em;
+  }
+
+  .title h3 {
+    font-size: 0.9em;
+  }
+
+  footer {
+    padding: 3em;
+  }
+
+  footer nav {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  header nav {
+    display: none;
+  }
+
+  .hero h1 {
+    margin-top: 1.5em;
+  }
+
+  .line {
+    width: 2.5em;
+    height: 0.2em;
+    background-color: #bd3a1c;
+    margin: 0.3em 0;
+  }
+
+  .why-us-box {
+    flex-direction: column;
+  }
+
+  .img-bg {
+    width: 100%;
+    height: 50%;
+    flex: 1;
+    background-position: 50% center;
+    background-size: 40%;
+  }
+
+  .why-us-box p {
+    margin-top: 0.2em;
+    flex: 1;
+  }
+
+  .benefit {
+    margin-top: -2em;
+    height: auto;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .hero,
+  .coming-soon {
+    flex-direction: column-reverse;
+  }
+
+  .title,
+  .coming-soon-text {
+    width: 100vw;
+    margin: 1em 0;
+    padding: 0 0.1em;
+    text-align: center;
+    position: absolute;
+    left: 0%;
+  }
+
+  .hero img {
+    width: 70%;
+    bottom: -10%;
+    left: -25%;
+  }
+}

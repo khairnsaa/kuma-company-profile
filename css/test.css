@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  font-size: 18px;
+}
+
+/* .container {
+  overflow: hidden;
+} */
+
+.cover {
+  margin: 5em auto;
+  background-color: cadetblue;
+  width: 30%;
+  height: 25em;
+  overflow: hidden;
+  position: relative;
+}
+
+.hover {
+  position: absolute;
+  width: 100%;
+  top: 0%;
+  transform: translateY(100%);
+  height: 25em;
+  background-color: chartreuse;
+  transition: ease-in 0.5s;
+}
+
+.cover:hover .hover {
+  transform: translateY(0);
+}

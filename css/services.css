@@ -1,0 +1,161 @@
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.feature-nav {
+  justify-content: space-between;
+}
+
+.menu-tab {
+  flex: 1;
+  margin-left: 0.3em;
+  text-align: center;
+}
+
+.feature-nav-active {
+  border-bottom: 2px solid black;
+  font-weight: 700;
+  font-size: 1.2em;
+}
+
+.menu-tab:first-child {
+  margin-left: 0;
+}
+
+.menu-tab:hover {
+  cursor: pointer;
+}
+
+.tab-content {
+  display: none;
+  margin-top: 2em;
+}
+
+.tab-active {
+  display: block;
+}
+
+.features-nav,
+.features-nav a,
+.feature-box,
+.features,
+.feature a,
+.feature-more {
+  display: flex;
+}
+
+.features-nav {
+  justify-content: center;
+  height: auto;
+  padding: 2em 0;
+  margin-bottom: 1em;
+}
+
+.features-nav a {
+  text-decoration: none;
+  color: var(--second-color);
+  width: 20%;
+  justify-content: center;
+  transition: ease-in-out 0.2s;
+}
+
+.features-nav a:hover {
+  font-weight: 700;
+  transition: ease-in-out 0.2s;
+}
+
+.feature-txt {
+  margin: 1em 2em;
+}
+
+.feature-box {
+  height: auto;
+  justify-content: space-between;
+  margin: 0 1em;
+}
+
+.features {
+  width: 32em;
+  align-items: center;
+  flex-wrap: wrap;
+  /* justify-content: space-evenly; */
+}
+
+.feature,
+.feature-more {
+  padding: 1em;
+  flex-direction: column;
+  background-color: var(--third-color);
+  border-radius: 1.2em;
+  justify-content: center;
+}
+
+.feature {
+  width: 10em;
+  margin: 1em;
+  align-items: center;
+  font-size: 0.9em;
+}
+
+.feature img {
+  width: 90%;
+  margin-bottom: 1em;
+}
+
+.feature a {
+  display: block;
+  color: var(--second-color);
+  text-decoration: none;
+  text-align: center;
+}
+
+.feature:hover {
+  background-color: #f0f0f0;
+  /* cursor: pointer; */
+}
+
+.feature-more {
+  align-items: center;
+  margin: 0.5em 1em;
+}
+
+.feature-more img {
+  width: 50%;
+}
+
+.feature-more p {
+  margin: 1em;
+}
+
+/* ---- responsice ---- */
+
+@media screen and (max-width: 760px) {
+  .features-nav a {
+    width: 80%;
+  }
+
+  .feature-box {
+    flex-direction: column;
+  }
+
+  .features {
+    width: auto;
+    overflow-x: scroll;
+    flex-wrap: nowrap;
+  }
+
+  .feature-more {
+    margin-top: 1em;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .feature {
+    width: 15em;
+  }
+}

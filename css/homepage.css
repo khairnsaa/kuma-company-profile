@@ -1,321 +1,262 @@
-section.hero {
-  height: 90vh;
-  background-color: var(--second-color);
-  justify-content: space-between;
-  overflow-x: hidden;
-  z-index: -101;
-}
-
-.video,
-.video-cover,
-.why-us,
-.why-us-box,
-.benefit,
-.benefit-cards,
-.card,
-.card-inside,
-.hover,
-.coming-soon-cover,
-.coming-soon-txt,
+header,
+nav,
+section,
+.content,
+.benefit-box,
+.box,
+.benefit-text,
+.benefit-hover,
 footer,
+.left,
 footer nav,
 .follow-us,
 .socmed {
   display: flex;
+  justify-content: center;
 }
 
-.hero {
+/***
+
+----------- HERO SECTION STYLE BEGIN -----------
+
+***/
+
+section.hero,
+.coming-soon {
+  min-width: 100vh;
+  /* overflow: hidden; */
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #be3a1d;
+  height: 90vh;
   z-index: -101;
+}
+
+.hero,
+.coming-soon {
+  position: relative;
+}
+
+.title,
+.coming-soon-text {
+  width: 50%;
+  color: #f8f8f8;
+  background-color: rebeccapurple;
+}
+
+.title h1 {
+  font-size: 4em;
+  margin-right: 1em;
 }
 
 .title h3 {
   font-weight: 400;
 }
 
-.hero_mobile {
-  display: none;
+/***
+
+----------- HERO SECTION STYLE END -----------
+
+***/
+
+/***
+
+----------- VIDEO SECTION STYLE BEGIN -----------
+
+***/
+
+.video {
+  align-items: center;
 }
 
-.hero_img {
-  overflow: hidden;
-}
+/***
 
-.gone {
-  opacity: 0;
-  display: none;
-  transition: ease-in-out 0.7;
-}
+----------- VIDEO SECTION STYLE END -----------
 
-/* ------ VIDEO SECTION BEGIN ------ */
+***/
 
-.video-cover {
-  flex-direction: column;
-}
+/***
 
-.hiya {
-  width: 40em;
-  height: 20em;
-  background-color: var(--third-color);
-}
+----------- WHY US SECTION STYLE BEGIN -----------
 
-.video-cover {
-  margin: auto;
-}
-
-.video-cover h3 {
-  margin-top: 1em;
-}
-
-/* ------ WHY US SECTION BEGIN ------ */
+***/
 
 .why-us {
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
+}
+
+.why-us h2 {
+  margin-bottom: 2em;
+}
+
+.content {
+  background-color: #f8f8f8;
+  border-radius: 20px;
 }
 
 .why-us-box {
-  margin-top: 1.5em;
-  background-color: var(--third-color);
   width: 80%;
-  height: 60%;
-  border-radius: 1.2em;
+  height: 50%;
 }
 
-.why-us-img {
-  width: 70%;
-  background-color: rgb(243, 181, 109);
-  border-radius: 1.2em 0 0 1.2em;
-  background-image: url("../img/maskot2.png");
-  background-size: 50%;
+.img-bg {
+  width: 80%;
+  height: 100%;
+  background-image: url("../img/maskot.png");
+  background-color: #f0c27e;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 30% center;
+  background-size: 50%;
+  transition: ease-in 0.5s;
 }
 
-.why-us-txt {
-  margin: auto 1em;
+.img-bg:hover {
+  background-size: 80%;
+  cursor: pointer;
 }
 
-/* ------ BENEFIT SECTION BEGIN ------ */
+.why-us p {
+  padding: 1em;
+  margin-top: 5em;
+}
+
+/***
+
+----------- WHY US SECTION STYLE END -----------
+
+***/
+
+/***
+
+----------- BENEFIT SECTION STYLE BEGIN -----------
+
+***/
 
 .benefit {
   flex-direction: column;
   align-items: center;
-  height: auto;
 }
 
-.benefit-cards {
-  margin: 1em auto;
-  width: 90%;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
+.benefit h2 {
+  margin-bottom: 2em;
 }
 
-.hover,
-.card-inside {
+.box,
+.benefit-hover {
   width: 15em;
-  height: 15em;
-  border-radius: 0.5em;
+  height: 18em;
 }
 
-.card {
+.box {
+  margin: 1.5em;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
+  align-content: center;
+  transition: ease-in-out 0.5s;
   position: relative;
   overflow: hidden;
 }
 
-.card-inside {
-  background-color: var(--third-color);
-  margin: 1em 2em;
-  flex-direction: column;
+.benefit-icon {
+  flex: 1.5;
+}
+
+.first-benefit,
+.second-benefit,
+.third-benefit,
+.fourth-benefit {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50%;
+}
+
+.first-benefit {
+  background-image: url("../img/icon-price.png");
+}
+
+.second-benefit {
+  background-image: url("../img/icon-quality.png");
+}
+
+.third-benefit {
+  background-image: url("../img/icon-preorder.svg");
+}
+
+.benefit-text {
+  flex: 1;
   align-items: center;
-  justify-content: space-evenly;
 }
 
-.card img {
-  width: 80%;
-  padding: 1em;
-}
-
-.card p {
-  text-align: center;
-}
-
-.card a {
-  color: var(--base-color);
-}
-
-.button {
-  background-color: var(--second-color);
-}
-
-/* --- card gover ---- */
-
-.hover {
+.benefit-hover {
   position: absolute;
-  transform: translateY(110%);
-  padding: 0 1em;
+  top: 0%;
+  transform: translateY(100%);
+  transition: ease-in 0.5s;
+  background-color: #f0f0f0;
   align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  background-color: var(--second-color);
-  color: var(--base-color);
-  transition: ease-in-out 0.5s;
-}
-
-.hover a {
-  color: var(--second-color);
+  padding: 2em;
   text-align: center;
-  text-decoration: none;
-  margin-top: 0.5em;
-  background-color: var(--base-color);
 }
 
-.card:hover {
-  cursor: pointer;
+.box:hover .benefit-hover {
   transition: ease-in-out 0.5s;
-}
-
-.card:nth-child(4):hover,
-.card:nth-child(6):hover {
-  cursor: auto;
-}
-
-.card:hover .hover {
   transform: translateY(0);
 }
 
-/* ------ COMING SOON SECTION BEGIN ------ */
+/***
 
-.coming-soon-cover {
-  width: 90%;
-  margin: auto;
+----------- BENEFIT SECTION STYLE END -----------
+
+***/
+
+/***
+
+----------- COMING SOON SECTION STYLE BEGIN -----------
+
+***/
+
+.coming-soon {
+  background-image: url("../img/phone.png");
+  background-size: 35%;
+  background-repeat: no-repeat;
+  background-position: 10% 60%;
+  background-color: #f5ebdc;
+}
+
+.coming-soon-text {
+  color: #be3a1d;
+}
+
+footer {
+  height: 15em;
+  padding: 0 7em;
+  background-color: #be3a1d;
   justify-content: space-between;
 }
 
-.phone {
-  width: 50%;
+footer img {
+  width: 40%;
 }
 
-.phone img {
-  width: 100%;
+footer a,
+footer {
+  color: #f5ebdc;
 }
 
-.coming-soon-txt {
-  width: 50%;
+footer nav {
   flex-direction: column;
-  align-content: center;
+  margin-left: 5em;
+}
+
+.follow-us {
+  width: 15em;
+  align-items: flex-start;
   justify-content: center;
-  text-align: center;
+  flex-direction: column;
 }
 
-.coming-soon-txt h3 {
-  font-size: 2em;
-}
-
-.coming-soon-txt p {
-  margin-top: 2em;
-  font-size: 0.9em;
-}
-
-/* ------ COMING SOON SECTION BEGIN ------ */
-
-/* ------ Responsive ---------- */
-
-@media screen and (max-width: 992px) {
-  .hero img {
-    width: 110%;
-  }
-
-  .why-us-img {
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 760px) {
-  .hero {
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    overflow-y: hidden;
-    z-index: -101;
-  }
-
-  .hero_mobile {
-    display: block;
-    width: 100%;
-    height: 40em;
-    /* margin-top: -5em; */
-    background-image: url("../img/hero_home_mobile.png");
-    margin-top: -2em;
-    background-repeat: no-repeat;
-    background-size: 40%;
-    background-position: center 5%;
-  }
-
-  .hero_img img {
-    display: none;
-  }
-
-  .why-us-box {
-    flex-direction: column;
-  }
-  .why-us-img {
-    width: 100%;
-    height: 50%;
-    border-radius: 1.2em 1.2em 0 0;
-    background-size: 20%;
-  }
-
-  .coming-soon-cover {
-    flex-direction: column-reverse;
-    align-items: center;
-  }
-  .coming-soon-cover img {
-    margin-top: 2em;
-  }
-
-  footer nav {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 420px) {
-  .hero {
-    align-items: center;
-  }
-
-  .title {
-    justify-content: center;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .title h1 {
-    min-width: 18ch;
-    padding: 0 2em;
-  }
-
-  .hero_mobile {
-    background-position: center 10%;
-    background-size: 70%;
-    width: 100vw;
-  }
-
-  .benefit h3 {
-    text-align: center;
-  }
-
-  footer {
-    flex-direction: column-reverse;
-  }
-
-  footer .logo {
-    margin-top: 2em;
-  }
+.follow-us img {
+  width: 2em;
+  margin: 0.3em;
 }
