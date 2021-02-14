@@ -177,10 +177,102 @@ gsap.from('.who-we-are p', {
 gsap.from('.carousel-container', {
     scrollTrigger: {
         trigger:'.carousel-container',
-        markers: true,
         start: 'bottom center',
         toggleActions: "restart none none reverse" 
     },
     yPercent: -20,
+    opacity: 0,
+})
+
+// JOIN US SUPPLIER PAGE
+
+gsap.from('.bergabung h3', {
+    scrollTrigger: {
+        trigger:'.bergabung-cover',
+        start: 'top 85%',
+        toggleActions: "restart none none reverse" 
+    },
+    xPercent: -30,
+    opacity: 0,
+})
+
+gsap.from('.bergabung p', {
+    scrollTrigger: {
+        trigger:'.bergabung-cover',
+        start: 'top 85%',
+        toggleActions: "restart none none reverse" 
+    },
+    xPercent: -30,
+    opacity: 0,
+})
+
+gsap.from('.bergabung img', {
+    scrollTrigger: {
+        trigger:'.bergabung-cover',
+        start: 'top 85%',
+        toggleActions: "restart none none reverse" 
+    },
+    xPercent: -30,
+    opacity: 0,
+})
+
+
+gsap.from('.jual h3', {
+    scrollTrigger: {
+        trigger:'.jual-cover',
+        start: 'top 85%',
+        toggleActions: "restart none none reverse" 
+    },
+    xPercent: 30,
+    opacity: 0,
+})
+
+gsap.from('.jual p', {
+    scrollTrigger: {
+        trigger:'.jual-cover',
+        start: 'top 85%',
+        toggleActions: "restart none none reverse" 
+    },
+    xPercent: 30,
+    opacity: 0,
+})
+
+gsap.from('.jual img', {
+    scrollTrigger: {
+        trigger:'.jual-cover',
+        start: 'top 85%',
+        toggleActions: "restart none none reverse" 
+    },
+    xPercent: 30,
+    opacity: 0,
+})
+
+gsap.from('.keuangan h3', {
+    scrollTrigger: {
+        trigger:'.keuangan-cover',
+        start: 'top 85%',
+        toggleActions: "restart none none reverse" 
+    },
+    xPercent: -30,
+    opacity: 0,
+})
+
+gsap.from('.keuangan p', {
+    scrollTrigger: {
+        trigger:'.keuangan-cover',
+        start: 'top 85%',
+        toggleActions: "restart none none reverse" 
+    },
+    xPercent: -30,
+    opacity: 0,
+})
+
+gsap.from('.keuangan img', {
+    scrollTrigger: {
+        trigger:'.keuangan-cover',
+        start: 'top 85%',
+        toggleActions: "restart none none reverse" 
+    },
+    xPercent: -30,
     opacity: 0,
 })
