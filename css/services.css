@@ -1,7 +1,37 @@
+/* Display flex */
+
+.features-nav,
+.features-nav a,
+.feature-box,
+.features,
+.feature,
+.feature-more,
+.service .title {
+  display: flex;
+}
+
+/* ------------ Service Hero Section Begin ------------ */
+
+.service {
+  background-image: url("../img/hero_service_image.png");
+}
+
+.service .title {
+  align-items: flex-start;
+}
+
+.service .title h1 {
+  width: 70%;
+}
+
 .container {
   width: 100%;
   margin: 0 auto;
 }
+
+/* ------------ Service Hero Section End ------------ */
+
+/* ------------ Feature Navigation Section Begin ------------ */
 
 .feature-nav {
   justify-content: space-between;
@@ -27,6 +57,10 @@
   cursor: pointer;
 }
 
+/* ------------ Feature Navigation Section End ------------ */
+
+/* ------------ Feature Tab Section Begin ------------ */
+
 .tab-content {
   display: none;
   margin-top: 2em;
@@ -41,18 +75,10 @@
   flex: 1;
 }
 
-.features-nav,
-.features-nav a,
-.feature-box,
-.features,
-.feature,
-.feature-more {
-  display: flex;
-}
-
 .content {
   padding-right: 2em;
   width: 90%;
+  /* background-color: brown; */
   margin: auto;
 }
 
@@ -144,7 +170,9 @@
   padding-right: 2em;
 }
 
-/* ---- responsice ---- */
+/* ------------ Feature Tab Section Begin ------------ */
+
+/* ---- RESPONSIVE ---- */
 @media screen and (max-width: 992px) {
   .feature {
     width: 100%;

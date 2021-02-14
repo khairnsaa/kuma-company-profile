@@ -60,17 +60,55 @@ selectItem()
 const selectFeature = () => {
   selectedFeatures.forEach((selectedFeature, i) =>{
     selectedFeature.addEventListener('click', () => {
-      // console.log(selectedFeatures[i].firstElementChild.nextElementSibling);
  
  
       featureTitleText.textContent = selectedFeatures[i].firstElementChild.nextElementSibling.textContent
       featureText.textContent = selectedFeatures[i].lastElementChild.textContent
       featureImage.src = selectedFeatures[i].firstElementChild.src
-      // console.log(featureText[i])
     })
  })
 }
 
 selectFeature()
 
-// console.log(selectedFeature);
+
+// Contributors carousel
+
+const carouselSlider = document.querySelector('.carousel-slider');
+const carouselImages = document.querySelectorAll('.carousel-slider .person');
+const prevBtn = document.querySelector('#prevBtn')
+const nextBtn = document.querySelector('#nextBtn')
+
+let counter = 1;
+const size = carouselImages[0].clientWidth
+
+console.log(carouselSlider);
+
+carouselSlider.style.transform = `translateX(${-size*counter}px)`
+
+nextBtn.addEventListener('click', () => {
+  if(counter >= carouselImages.length - 1) return;
+  carouselSlider.style.transition = 'transform 0.4s ease-in-out'
+  counter++
+  carouselSlider.style.transform = `translateX(${-size*counter}px)`
+})
+
+
+prevBtn.addEventListener('click', () => {
+  if(counter <= 0) return;
+  carouselSlider.style.transition = 'transform 0.4s ease-in-out'
+  counter--
+  carouselSlider.style.transform = `translateX(${-size*counter}px)`
+})
+
+carouselSlider.addEventListener('transitionend', () => {
+  if(carouselImages[counter].id == "firstClone"){
+    carouselSlider.style.transition = 'none';
+    counter = carouselImages.length - 2;
+    carouselSlider.style.transform = `translateX(${-size*counter}px)`
+  } else if(carouselImages[counter].id == "lastClone"){
+    carouselSlider.style.transition = 'none';
+    counter = carouselImages.length - counter;
+    carouselSlider.style.transform = `translateX(${-size*counter}px)`
+  } 
+})

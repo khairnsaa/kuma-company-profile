@@ -3,6 +3,7 @@
 @import "./homepage.css";
 @import "./services.css";
 @import "./join_produsen.css";
+@import "./about.css";
 
 :root {
   --base-color: #f5ebdc;
@@ -149,16 +150,16 @@ menu,
 }
 
 .title {
-  color: var(--base-color);
+  color: var(--third-color);
   width: 90%;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   padding: 5em;
 }
 
 .title h1 {
   font-size: 4em;
-  width: 90%;
+  width: 50%;
 }
 
 /* Footer section */
