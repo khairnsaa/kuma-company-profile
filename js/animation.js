@@ -177,7 +177,7 @@ gsap.from('.who-we-are p', {
 gsap.from('.carousel-container', {
     scrollTrigger: {
         trigger:'.carousel-container',
-        start: 'bottom center',
+        start: 'top center',
         toggleActions: "restart none none reverse" 
     },
     yPercent: -20,
