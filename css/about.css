@@ -9,7 +9,9 @@
 .who-we-are,
 .contributors,
 .ctrl-btn,
-.person {
+.person,
+.contact-cover,
+.contact {
   display: flex;
 }
 
@@ -81,6 +83,7 @@
   height: auto;
   flex-direction: column;
   margin: 2em 0;
+  margin-bottom: 0;
 }
 
 .carousel-container {
@@ -89,6 +92,7 @@
   overflow: hidden;
   padding: 2em 0;
   position: relative;
+  padding-bottom: 0;
 }
 
 .carousel-slider {
@@ -97,7 +101,7 @@
   flex-wrap: wrap;
   align-items: center;
   width: 100%;
-  height: 300px;
+  height: 450px;
 }
 
 .carousel-slider img {
@@ -127,7 +131,7 @@
 #prevBtn,
 #nextBtn {
   position: absolute;
-  top: 50%;
+  top: 35%;
   z-index: 100;
   left: 5%;
   font-size: 1.5em;
@@ -137,6 +141,21 @@
 
 #nextBtn {
   left: 90%;
+}
+
+.contact {
+  margin-top: -10em;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.contact-cover {
+  background-color: var(--third-color);
+  flex-direction: column;
+  border-radius: 1em;
+  padding: 2em;
+  text-align: center;
+  box-shadow: 0.8em 0.8em 0.7em rgba(0, 0, 0, 0.5);
 }
 
 /* Responsive */

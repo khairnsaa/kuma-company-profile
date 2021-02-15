@@ -4,6 +4,7 @@
 @import "./services.css";
 @import "./join_produsen.css";
 @import "./about.css";
+@import "./keep-scrolling-anim.css";
 
 :root {
   --base-color: #f5ebdc;
