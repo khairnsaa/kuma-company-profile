@@ -223,11 +223,6 @@ a {
     width: 40em;
   }
 
-  .hero_img img {
-    width: 100%;
-    transform: translateX(10%);
-  }
-
   .title {
     width: 80%;
   }
@@ -265,7 +260,6 @@ a {
   menu a {
     color: var(--second-color);
     text-decoration: none;
-    z-index: 101;
   }
 
   menu a:hover {

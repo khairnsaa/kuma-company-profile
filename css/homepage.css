@@ -268,12 +268,11 @@ h3 {
 /* ------ Responsive ---------- */
 
 @media screen and (max-width: 992px) {
-  .hero img {
-    width: 110%;
-  }
-
   .why-us-img {
     width: 100%;
+  }
+  .title h3 {
+    font-size: 0.9em;
   }
 }
 

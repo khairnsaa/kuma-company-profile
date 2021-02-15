@@ -3,6 +3,7 @@
 .about {
   background-image: url("../img/hero_about_img.png");
   background-position: 70% 0;
+  background-repeat: no-repeat;
 }
 
 .goal,
@@ -115,6 +116,7 @@
   justify-content: space-evenly;
   height: 50vh;
   width: 100%;
+  padding: 2em;
   border-radius: 1em;
 }
 
@@ -126,6 +128,7 @@
 .person p {
   padding: 0 4.5em;
   text-align: center;
+  margin-top: 0.2em;
 }
 
 #prevBtn,
@@ -155,7 +158,6 @@
   border-radius: 1em;
   padding: 2em;
   text-align: center;
-  box-shadow: 0.8em 0.8em 0.7em rgba(0, 0, 0, 0.5);
 }
 
 /* Responsive */
@@ -169,6 +171,15 @@
 }
 
 @media screen and (max-width: 769px) {
+  .about {
+    background-size: cover;
+    background-position: 10% center;
+  }
+
+  .goal p {
+    width: 80%;
+  }
+
   .who-we-are {
     flex-direction: column;
     align-content: center;
@@ -186,21 +197,30 @@
   }
 
   .person img {
-    width: 40%;
+    margin-top: 1em;
+    width: 30%;
   }
 
   .person p {
     text-align: center;
+    font-size: 0.9em;
+  }
+
+  .carousel-container {
+    /* overflow-x: scroll; */
+    height: 350px;
+    margin-bottom: 2em;
   }
 
   #prevBtn,
   #nextBtn {
-    display: none;
+    top: 55%;
   }
-  .carousel-container {
-    overflow-x: scroll;
-    height: 350px;
-    margin-bottom: 2em;
+
+  .contact {
+    margin-top: -5em;
+    justify-content: space-around;
+    align-items: center;
   }
 }
 
@@ -209,8 +229,29 @@
     width: 100%;
   }
 
+  .goal img {
+    width: 100%;
+  }
+
+  .goal p {
+    width: 100%;
+  }
+
+  .goal img,
+  .goal p {
+    margin-top: -3em;
+  }
+
+  .who-we-are {
+    margin-top: -2em;
+  }
+
   .who-we-are img {
     width: 100%;
+  }
+
+  .who-we-are p {
+    text-align: justify;
   }
 
   .carousel-container {
@@ -218,11 +259,11 @@
   }
 
   .person img {
-    width: 40%;
+    width: 35%;
   }
 
   .person p {
-    font-size: 0.9em;
+    font-size: 0.8em;
     padding: 0.5em;
   }
 }

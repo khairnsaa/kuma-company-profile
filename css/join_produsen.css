@@ -81,24 +81,47 @@ section.keuangan {
 }
 
 @media screen and (max-width: 922px) {
-  .hero_img_sp,
-  .hero_img_pr {
-    width: 100%;
-    justify-content: flex-end;
-  }
-
   .title_pr {
     font-size: 1.8em;
     width: 100%;
     margin-top: 2em;
+    justify-content: center;
+    height: 100%;
+  }
+
+  .title_pr h3 {
+    font-size: 0.7em;
   }
 }
 
 @media screen and (max-width: 760px) {
+  .join_pr,
+  .hero_sp {
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
   section.bergabung,
   section.jual,
   section.keuangan {
     height: auto;
+  }
+  .bergabung-cover,
+  .jual-cover,
+  .keuangan-cover {
+    flex-direction: column-reverse;
+  }
+  .bergabung-cover img,
+  .jual-cover img,
+  .keuangan-cover img {
+    width: 90%;
+  }
+
+  .bergabung-cover h3,
+  .jual-cover h3,
+  .keuangan-cover h3 {
+    text-align: center;
+    margin-top: 0.5em;
   }
 }
 
