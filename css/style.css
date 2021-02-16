@@ -33,7 +33,8 @@ nav,
 section,
 .hero_img,
 .title,
-.wrap {
+.wrap,
+.socmed {
   display: flex;
 }
 
@@ -194,8 +195,9 @@ footer nav a {
 }
 
 .socmed {
-  justify-content: space-around;
   margin-top: 1.5em;
+  padding-left: 2em;
+  /* background-color: aquamarine; */
 }
 
 .socmed img {
