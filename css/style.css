@@ -195,13 +195,15 @@ footer nav a {
 }
 
 .socmed {
+  justify-content: space-around;
   margin-top: 1.5em;
-  padding-left: 2em;
-  /* background-color: aquamarine; */
 }
 
 .socmed img {
-  width: 50%;
+  width: 100%;
+}
+.socmed a {
+  width: 20%;
 }
 
 /* general style */
