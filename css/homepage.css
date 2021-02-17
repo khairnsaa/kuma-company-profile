@@ -330,6 +330,7 @@ h3 {
   .coming-soon-cover {
     flex-direction: column-reverse;
     align-items: center;
+    height: auto;
   }
   .coming-soon-cover img {
     margin-top: 2em;
@@ -364,6 +365,15 @@ h3 {
     background-position: center 10%;
     background-size: 70%;
     width: 100vw;
+  }
+
+  .why-us-box {
+    height: 70%;
+  }
+
+  .why-us-txt {
+    font-size: 0.9em;
+    margin: 1em;
   }
 
   .benefit h3 {

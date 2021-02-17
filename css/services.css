@@ -226,6 +226,7 @@
 
   .feature-more {
     flex-direction: column;
+    height: auto;
   }
 
   .feature-more img {
