@@ -88,17 +88,17 @@ h3 {
 
 .video {
   height: 80vh;
-}
-
-.hiya {
-  width: 40em;
-  height: 20em;
-  outline: none;
+  margin-top: 3em;
 }
 
 .video-cover {
   flex-direction: column;
   margin: auto;
+}
+
+.video-cover object {
+  width: 60vw;
+  height: 70vh;
 }
 
 .video-cover h3 {
@@ -291,8 +291,9 @@ h3 {
     background-position: bottom center;
   }
 
-  .hiya {
+  .video-cover object {
     width: 90vw;
+    height: 50vh;
   }
 
   .keep-scrolling {
