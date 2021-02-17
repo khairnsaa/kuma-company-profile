@@ -262,6 +262,10 @@
     width: 35%;
   }
 
+  .person h3 {
+    text-align: center;
+  }
+
   .person p {
     font-size: 0.8em;
     padding: 0.5em;
